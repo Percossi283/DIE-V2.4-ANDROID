@@ -52,7 +52,7 @@ class FPSCounter extends TextField
 		defaultTextFormat = new TextFormat("_sans", 14, color);
 		width = FlxG.width;
 		multiline = true;
-		text = "FPS: ";
+		text = "FPS Counter: ";
 
 		times = [];
 	}
@@ -84,9 +84,9 @@ class FPSCounter extends TextField
 		'\nMemory: ${flixel.util.FlxStringUtil.formatBytes(memoryMegas)}' +
 		os;
 
-		textColor = 0xFFFFFFFF;
+		textColor = 0xFFFF00;
 		if (currentFPS < FlxG.drawFramerate * 0.5)
-			textColor = 0xFFFF0000;
+			textColor = 0xFFFF00;
 	}
 
 	inline function get_memoryMegas():Float
